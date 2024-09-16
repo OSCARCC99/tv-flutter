@@ -1,0 +1,32 @@
+name: tv
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  connectivity_plus: 6.0.3   # Downgraded for SDK 3.1.0
+  http: ^1.2.1
+  flutter_secure_storage: ^8.0.0  # Downgraded for SDK compatibility
+  provider: ^6.1.2
+  equatable: ^2.0.5
+  json_annotation: ^4.8.0    # Downgraded version
+  freezed_annotation: ^2.3.0 # Downgraded version
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.3.3      # Older version to support SDK 3.1.0
+  json_serializable: ^6.7.0 # Downgraded for SDK compatibility
+  freezed: ^2.3.0           # Downgraded for SDK compatibility
+
+dependency_overrides:
+  json_serializable: ^6.7.0
+  freezed_annotation: ^2.3.0
